@@ -153,7 +153,7 @@ function App() {
         (res) => {
           try {
             if (sessionStorage.getItem("token") === res.data[0].token) {
-              validateUser(1, res.data.token, sessionStorage.getItem("email"), "token success");
+              validateUser(1, res.data[0].token, sessionStorage.getItem("email"), "token success");
             }
           } catch (error) {
             console.log("error: " + error);
