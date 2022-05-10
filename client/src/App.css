@@ -1,0 +1,25 @@
+/*start here*/
+footer {
+  box-shadow: 0 -4px 3px rgba(0, 0, 0, 0.075);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+div.animated[role="alert"] {
+  margin-top: 5%;
+  position: fixed;
+  z-index: 150;
+  width: 100%;
+}
+
+.error {
+  border: #ff0000 solid 1px;
+}
+
+.hide {
+  display: none;
+}
