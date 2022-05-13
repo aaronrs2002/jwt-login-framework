@@ -38,18 +38,18 @@ function App() {
 
 
   //CLIENT SIDE VALIDATE USER
-  const validateUser = (success, token, email, msg) => {
+  const validateUser = (success, tokenPass, email, msg) => {
     if (success === 1) {
       setIsValidUser((isValidUser) => true);
-      setToken((token) => token);
-      sessionStorage.setItem("token", token);
+      setToken((token) => tokenPass);
+      sessionStorage.setItem("token", tokenPass);
       setCheckedToken((setCheckedToken) => true);
       setUserEmail((userEmail) => email);
       sessionStorage.setItem("email", email);
 
     } else {
       setIsValidUser((isValidUser) => false);
-      setToken((token) => token);
+      setToken((token) => tokenPass);
       sessionStorage.removeItem("token");
       setUserEmail((userEmail) => null);
       showAlert("That didn't work: " + msg, "danger");
