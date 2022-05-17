@@ -189,8 +189,8 @@ function App() {
             <div className="row">
               <div className="col-md-3">
                 {infoMessage === "account-settings" ?
-                  <a href="#settingsPanel" className="btn btn-secondary" onClick={() => setInfoMessage((infoMessage) => "")} >{userEmail} <i className="fas fa-cog"></i></a> :
-                  <a href="#settingsPanel" className="btn btn-secondary" onClick={() => setInfoMessage((infoMessage) => "account-settings")} >{userEmail} <i className="fas fa-cog"></i></a>}
+                  <a href="#settingsPanel" className="btn btn-secondary  btn-block" onClick={() => setInfoMessage((infoMessage) => "")} >{userEmail} <i className="fas fa-cog"></i></a> :
+                  <a href="#settingsPanel" className="btn btn-secondary  btn-block" onClick={() => setInfoMessage((infoMessage) => "account-settings")} >{userEmail} <i className="fas fa-cog"></i></a>}
                 {infoMessage === "account-settings" ?
                   <div id="settingsPanel" className="py-2">
                     <label>Settings: </label>
