@@ -9,7 +9,6 @@
     "axios": "^0.27.2",
     "buffer": "^6.0.3",
     "concurrently": "^7.1.0",
-    "node-polyfill-webpack-plugin": "^1.1.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -43,6 +42,5 @@
   "description": "tutorial",
   "main": "server.js",
   "author": "web-presence llc",
-  "license": "ISC",
-  "start": "webpack --config ./webpack/webpack.config.js"
+  "license": "ISC"
 }
